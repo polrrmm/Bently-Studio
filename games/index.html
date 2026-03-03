@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Games — Bentley Studio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Main CSS - المسار الصحيح (رجوع لمجلد الأصل) -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">Bentley</span>
+                <span class="logo-dot"></span>
+            </a>
+            <div class="nav-menu">
+                <a href="../index.html#work" class="nav-item">Work</a>
+                <a href="index.html" class="nav-item active">Games</a>
+                <a href="../index.html#studio" class="nav-item">Studio</a>
+                <a href="../index.html#contact" class="nav-item">Contact</a>
+            </div>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-content">
+            <h1 class="page-title">All Games</h1>
+            <p class="page-description">
+                Explore our complete collection of handcrafted 2D experiences.
+            </p>
+        </div>
+    </section>
+
+    <!-- Games Grid Section -->
+    <section class="featured" id="work">
+    <div class="section-header">
+        <span class="section-subtitle">Our work</span>
+        <h2 class="section-title">Current project</h2>
+    </div>
+    
+    <div class="games-grid" style="grid-template-columns: 1fr;"> <!-- عمود واحد فقط -->
+        <!-- Game 1 - Across the Pages فقط -->
+        <div class="game-card" data-game="across-the-pages" style="max-width: 600px; margin: 0 auto;">
+            <div class="card-media">
+                <img src="https://placehold.co/600x400/1a1a1a/3b82f6?text=Across+the+Pages" alt="Across the Pages" class="card-image">
+                <div class="card-overlay">
+                    <a href="games/across-the-pages.html" class="card-link">
+                        <span>View game</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Across the Pages</h3>
+                <p class="card-category">Narrative Adventure · 2D Puzzle</p>
+                <div class="card-stats">
+                    <span><i class="far fa-heart"></i> 0</span>
+                    <span><i class="far fa-download"></i> Coming Soon</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section-footer">
+        <a href="games/across-the-pages.html" class="view-all">
+            <span>Learn more about the game</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+   <!-- Downloads Grid - بطاقة واحدة فقط -->
+<div class="downloads-grid" style="grid-template-columns: minmax(300px, 500px); justify-content: center;">
+    <!-- Across the Pages Download Card -->
+    <div class="download-card">
+        <span class="card-badge">Coming Soon</span>
+        <div class="card-header">
+            <div class="game-icon">
+                <i class="fas fa-book-open"></i>
+            </div>
+            <div class="game-title">
+                <h3>Across the Pages</h3>
+                <p>Narrative Adventure</p>
+            </div>
+        </div>
+        
+        <div class="game-info">
+            <div class="info-row">
+                <span class="info-label"><i class="fas fa-weight-hanging"></i> File size</span>
+                <span class="info-value">TBD</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label"><i class="fas fa-code-branch"></i> Version</span>
+                <span class="info-value">In Development</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label"><i class="fas fa-calendar"></i> Release</span>
+                <span class="info-value">Summer 2024</span>
+            </div>
+        </div>
+        
+        <div class="game-tags">
+            <span class="tag">Narrative</span>
+            <span class="tag">Puzzle</span>
+            <span class="tag">2D</span>
+            <span class="tag">Adventure</span>
+        </div>
+        
+        <button class="download-btn-card" onclick="notifyMe()" style="width: 100%;">
+            <div class="btn-info">
+                <span class="size">Coming Soon</span>
+                <span class="version">Notify me</span>
+            </div>
+            <div class="btn-action">
+                <span>Get notified</span>
+                <i class="fas fa-bell"></i>
+            </div>
+        </button>
+    </div>
+</div>
+
+                <!-- Shadow Quest Download -->
+                <div class="download-card">
+                    <span class="card-badge">New</span>
+                    <div class="card-header">
+                        <div class="game-icon">
+                            <i class="fas fa-mask"></i>
+                        </div>
+                        <div class="game-title">
+                            <h3>Shadow Quest</h3>
+                            <p>Platformer</p>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-weight-hanging"></i> Size</span>
+                            <span class="info-value">512 MB</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-code-branch"></i> Version</span>
+                            <span class="info-value">1.8.2</span>
+                        </div>
+                    </div>
+                    <a href="../downloads/shadow-quest.zip" class="download-btn-card" download>
+                        <div class="btn-info">
+                            <span class="size">512 MB</span>
+                            <span class="version">v1.8.2</span>
+                        </div>
+                        <div class="btn-action">
+                            <span>Download</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Cosmic Jumper Download -->
+                <div class="download-card">
+                    <div class="card-header">
+                        <div class="game-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="game-title">
+                            <h3>Cosmic Jumper</h3>
+                            <p>Arcade</p>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-weight-hanging"></i> Size</span>
+                            <span class="info-value">189 MB</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-code-branch"></i> Version</span>
+                            <span class="info-value">1.0.0</span>
+                        </div>
+                    </div>
+                    <a href="../downloads/cosmic-jumper.zip" class="download-btn-card" download>
+                        <div class="btn-info">
+                            <span class="size">189 MB</span>
+                            <span class="version">v1.0.0</span>
+                        </div>
+                        <div class="btn-action">
+                            <span>Download</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">Bentley Studio</div>
+                <p class="footer-copyright">© 2024 — All rights reserved</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Twitter</a>
+                <a href="#" class="footer-link">Instagram</a>
+                <a href="#" class="footer-link">GitHub</a>
+                <a href="#" class="footer-link">Discord</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Download Progress -->
+    <div class="download-progress" id="downloadProgress">
+        <div class="progress-header">
+            <i class="fas fa-download"></i>
+            <span>Downloading...</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-stats">
+            <span id="progressPercent">0%</span>
+            <span id="progressSpeed">0 MB/s</span>
+        </div>
+    </div>
+
+    <!-- Scripts - المسار الصحيح -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

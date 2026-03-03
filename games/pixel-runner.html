@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Runner — Bentley Studio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">Bentley</span>
+                <span class="logo-dot"></span>
+            </a>
+            <div class="nav-menu">
+                <a href="../index.html#work" class="nav-item">Work</a>
+                <a href="index.html" class="nav-item active">Games</a>
+                <a href="../index.html#studio" class="nav-item">Studio</a>
+                <a href="../index.html#contact" class="nav-item">Contact</a>
+            </div>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Game Hero -->
+    <section class="game-hero">
+        <div class="game-hero-content">
+            <div class="game-hero-info">
+                <h1>Pixel Runner</h1>
+                <div class="game-hero-categories">
+                    <span>Endless Runner</span>
+                    <span>2D</span>
+                    <span>Retro</span>
+                </div>
+                <p class="game-hero-description">
+                    A minimalist endless runner where every pixel counts. Run, jump, and dash through 
+                    procedurally generated landscapes in this addictive 2D experience.
+                </p>
+                <div class="game-hero-actions">
+                    <a href="../downloads/pixel-runner.zip" class="btn btn-primary btn-large download-btn" download>
+                        <i class="fas fa-download"></i>
+                        <span>Download now (245 MB)</span>
+                    </a>
+                    <button class="btn btn-outline wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="game-hero-visual">
+                <div class="pixel-animation">
+                    <div class="pixel-grid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Details -->
+    <section class="game-details">
+        <div class="details-container">
+            <!-- About -->
+            <div class="detail-section">
+                <h2>About the game</h2>
+                <p>
+                    Pixel Runner is our love letter to classic endless runners. With its minimalist pixel art style
+                    and responsive controls, it offers a challenging yet accessible experience for players of all skill levels.
+                </p>
+                <p>
+                    The game features procedurally generated levels, meaning no two runs are ever the same. Master the
+                    rhythm of jumps, collect power-ups, and compete for the highest score on global leaderboards.
+                </p>
+            </div>
+
+            <!-- Features -->
+            <div class="detail-section">
+                <h2>Key features</h2>
+                <div class="features-grid">
+                    <div class="feature-block">
+                        <i class="fas fa-infinity"></i>
+                        <h3>Endless gameplay</h3>
+                        <p>Never-ending procedurally generated levels</p>
+                    </div>
+                    <div class="feature-block">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Pixel art style</h3>
+                        <p>Hand-crafted pixel art animations</p>
+                    </div>
+                    <div class="feature-block">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Power-ups</h3>
+                        <p>5 unique power-ups to discover</p>
+                    </div>
+                    <div class="feature-block">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Leaderboards</h3>
+                        <p>Compete with players worldwide</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story -->
+            <div class="detail-section">
+                <h2>The story</h2>
+                <p>
+                    In a world made entirely of pixels, you are a lone runner trying to escape the digital void. 
+                    The world behind you is collapsing pixel by pixel, and your only chance is to keep running forward.
+                </p>
+                <p>
+                    Along the way, you'll discover fragments of lost memories, each telling a story of the world that was.
+                    Can you run fast enough to reach the edge of existence?
+                </p>
+            </div>
+
+            <!-- Gallery -->
+            <div class="detail-section">
+                <h2>Screenshots</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x300/1a1a1a/3b82f6?text=Screenshot+1" alt="Screenshot 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x300/1a1a1a/3b82f6?text=Screenshot+2" alt="Screenshot 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x300/1a1a1a/3b82f6?text=Screenshot+3" alt="Screenshot 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x300/1a1a1a/3b82f6?text=Screenshot+4" alt="Screenshot 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Requirements -->
+            <div class="detail-section">
+                <h2>System requirements</h2>
+                <div class="requirements">
+                    <div class="req-block">
+                        <h4>Minimum</h4>
+                        <ul>
+                            <li>OS: Windows 7/8/10</li>
+                            <li>Processor: 2.0 GHz</li>
+                            <li>Memory: 2 GB RAM</li>
+                            <li>Graphics: DirectX 10 compatible</li>
+                            <li>Storage: 500 MB</li>
+                        </ul>
+                    </div>
+                    <div class="req-block">
+                        <h4>Recommended</h4>
+                        <ul>
+                            <li>OS: Windows 10/11</li>
+                            <li>Processor: 2.5 GHz+</li>
+                            <li>Memory: 4 GB RAM</li>
+                            <li>Graphics: DirectX 11 compatible</li>
+                            <li>Storage: 1 GB SSD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section (Specific for this game) -->
+    <section class="downloads-section">
+        <div class="downloads-container">
+            <div class="downloads-header">
+                <span class="section-subtitle">Download</span>
+                <h2 class="section-title">Get Pixel Runner</h2>
+                <p class="section-description">
+                    Choose your platform and start running today.
+                </p>
+            </div>
+            
+            <div class="downloads-grid" style="grid-template-columns: repeat(2, 1fr);">
+                <!-- Windows Download -->
+                <div class="download-card">
+                    <span class="card-badge">Recommended</span>
+                    <div class="card-header">
+                        <div class="game-icon">
+                            <i class="fab fa-windows"></i>
+                        </div>
+                        <div class="game-title">
+                            <h3>Windows Version</h3>
+                            <p>PC · 64-bit</p>
+                        </div>
+                    </div>
+                    
+                    <div class="game-info">
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-weight-hanging"></i> File size</span>
+                            <span class="info-value">245 MB</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-code-branch"></i> Version</span>
+                            <span class="info-value">2.1.0</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-calendar"></i> Released</span>
+                            <span class="info-value">2024-03-15</span>
+                        </div>
+                    </div>
+                    
+                    <div class="game-tags">
+                        <span class="tag">Installer</span>
+                        <span class="tag">Portable</span>
+                        <span class="tag">Steam</span>
+                    </div>
+                    
+                    <a href="../downloads/pixel-runner-windows.zip" class="download-btn-card" download>
+                        <div class="btn-info">
+                            <span class="size">245 MB</span>
+                            <span class="version">v2.1.0</span>
+                        </div>
+                        <div class="btn-action">
+                            <span>Download</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Mac Download -->
+                <div class="download-card">
+                    <div class="card-header">
+                        <div class="game-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <div class="game-title">
+                            <h3>macOS Version</h3>
+                            <p>Mac · Universal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="game-info">
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-weight-hanging"></i> File size</span>
+                            <span class="info-value">256 MB</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-code-branch"></i> Version</span>
+                            <span class="info-value">2.1.0</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-calendar"></i> Released</span>
+                            <span class="info-value">2024-03-15</span>
+                        </div>
+                    </div>
+                    
+                    <div class="game-tags">
+                        <span class="tag">Apple Silicon</span>
+                        <span class="tag">Intel</span>
+                        <span class="tag">DMG</span>
+                    </div>
+                    
+                    <a href="../downloads/pixel-runner-mac.zip" class="download-btn-card" download>
+                        <div class="btn-info">
+                            <span class="size">256 MB</span>
+                            <span class="version">v2.1.0</span>
+                        </div>
+                        <div class="btn-action">
+                            <span>Download</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Quick Info -->
+            <div class="quick-downloads">
+                <h4 class="quick-title">Also available on</h4>
+                <div class="quick-grid" style="justify-content: center;">
+                    <a href="#" class="quick-item" style="flex: 0 1 auto;">
+                        <div class="quick-icon">
+                            <i class="fab fa-steam"></i>
+                        </div>
+                        <div class="quick-info">
+                            <div class="quick-name">Steam</div>
+                        </div>
+                        <div class="quick-action">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="quick-item" style="flex: 0 1 auto;">
+                        <div class="quick-icon">
+                            <i class="fab fa-itch-io"></i>
+                        </div>
+                        <div class="quick-info">
+                            <div class="quick-name">Itch.io</div>
+                        </div>
+                        <div class="quick-action">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="quick-item" style="flex: 0 1 auto;">
+                        <div class="quick-icon">
+                            <i class="fab fa-gog"></i>
+                        </div>
+                        <div class="quick-info">
+                            <div class="quick-name">GOG</div>
+                        </div>
+                        <div class="quick-action">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Games -->
+    <section class="related-games">
+        <div class="related-container">
+            <h2>You might also like</h2>
+            <div class="related-grid">
+                <a href="shadow-quest.html" class="related-card">
+                    <img src="https://placehold.co/600x400/1a1a1a/8b5cf6?text=Shadow+Quest" alt="Shadow Quest">
+                    <h3>Shadow Quest</h3>
+                    <p>Platformer · Adventure</p>
+                </a>
+                <a href="cosmic-jumper.html" class="related-card">
+                    <img src="https://placehold.co/600x400/1a1a1a/10b981?text=Cosmic+Jumper" alt="Cosmic Jumper">
+                    <h3>Cosmic Jumper</h3>
+                    <p>Arcade · Retro</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">Bentley Studio</div>
+                <p class="footer-copyright">© 2024 — All rights reserved</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Twitter</a>
+                <a href="#" class="footer-link">Instagram</a>
+                <a href="#" class="footer-link">GitHub</a>
+                <a href="#" class="footer-link">Discord</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Download Progress -->
+    <div class="download-progress" id="downloadProgress">
+        <div class="progress-header">
+            <i class="fas fa-download"></i>
+            <span>Downloading Pixel Runner</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-stats">
+            <span id="progressPercent">0%</span>
+            <span id="progressSpeed">0 MB/s</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

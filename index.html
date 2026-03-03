@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ===== أساسيات SEO ===== -->
+    <title>Bentley Studio</title>
+    <meta name="description" content="A narrative-driven 2D adventure where you jump between storybook pages. Every page holds a new mystery, every chapter reveals a hidden truth. Coming Summer 2026.">
+    <meta name="keywords" content="2D game, narrative adventure, puzzle game, indie game, Bentley Studio, Across the Pages">
+    <meta name="author" content="Bentley Studio">
+    
+    <!-- ===== صورة نتائج البحث (الأهم) ===== -->
+    <!-- الصورة التي ستظهر في نتائج البحث -->
+    <meta property="og:image" content="https://yourusername.github.io/bentley-studio/assets/images/across-the-pages.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Across the Pages - Narrative 2D Adventure">
+    
+    <!-- ===== بطاقة Twitter ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Across the Pages — Bentley Studio">
+    <meta name="twitter:description" content="A narrative-driven 2D adventure where you jump between storybook pages.">
+    <meta name="twitter:image" content="https://yourusername.github.io/bentley-studio/assets/images/across-the-pages.png">
+    <meta name="twitter:image:alt" content="Across the Pages Game Art">
+    
+    <!-- ===== Facebook / Open Graph ===== -->
+    <meta property="og:title" content="Bentley Studio Games">
+    <meta property="og:description" content="Jump between storybook pages in this hand-drawn 2D puzzle adventure.">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bentley Studio">
+    
+    <!-- ===== أيقونة الموقع (Favicon) ===== -->
+    <link rel="icon" type="image/png" href="assets/images/across-the-pages.png">
+    <link rel="apple-touch-icon" href="assets/images/across-the-pages.png">
+    
+    <!-- ===== باقي الروابط ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-cube">
+                <div class="front"></div>
+                <div class="back"></div>
+                <div class="right"></div>
+                <div class="left"></div>
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="loader-text">BENTLEY STUDIO</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Bentley</span>
+                <span class="logo-dot"></span>
+            </a>
+            <div class="nav-menu">
+                <a href="#work" class="nav-item">Work</a>
+                <a href="games/across-the-pages.html" class="nav-item">Games</a>
+                <a href="#studio" class="nav-item">Studio</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </div>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-label">Bentley Studio</div>
+            <h1 class="hero-title">
+                <span class="title-line">We craft</span>
+                <span class="title-line gradient-text">2D experiences</span>
+                <span class="title-line">that matter</span>
+            </h1>
+            <p class="hero-description">
+                Minimal design, maximum impact. Every pixel tells a story in our handcrafted 2D worlds.
+            </p>
+            <div class="hero-cta">
+                <a href="games/across-the-pages.html" class="btn btn-primary">
+                    <span>Explore Games</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#studio" class="btn btn-outline">
+                    <span>Meet the Studio</span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="grid-lines"></div>
+        </div>
+    </section>
+
+  <!-- Featured Games Section -->
+<section class="featured" id="work">
+    <div class="section-header">
+        <span class="section-subtitle">Our work</span>
+        <h2 class="section-title">Current project</h2>
+    </div>
+    
+    <!-- في قسم Featured Games - صورة من الإنترنت -->
+    <div class="games-grid" style="grid-template-columns: minmax(300px, 500px); justify-content: center;">
+        <div class="game-card" data-game="across-the-pages">
+            <div class="card-media">
+                <!-- صورة كتاب من Unsplash (مجانية) -->
+                <img src="assets/images/across-the-pages-thumb.png" 
+                     alt="Across the Pages" 
+                     class="card-image"
+                     style="width: 100%; height: 100%; object-fit: cover;">
+                
+                <!-- طبقة التعتيم -->
+                <div class="card-overlay">
+                    <a href="games/across-the-pages.html" class="card-link">
+                        <span>View game</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="card-content">
+                <h3 class="card-title">Across the Pages</h3>
+                <p class="card-category">Narrative Adventure · 2D Puzzle</p>
+                <div class="card-stats">
+                    <span><i class="far fa-heart"></i> 0</span>
+                    <span><i class="far fa-download"></i> Coming Soon</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section-footer">
+        <a href="games/across-the-pages.html" class="view-all">
+            <span>Learn more about the game</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+        
+        <div class="section-footer">
+            <a href="games/across-the-pages.html" class="view-all">
+                <span>Learn more about the game</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- DOWNLOADS SECTION - DARK MODE -->
+    <section class="downloads-section" id="downloads">
+        <div class="downloads-container">
+            <div class="downloads-header">
+                <span class="section-subtitle">Coming Soon</span>
+                <h2 class="section-title">Across the Pages</h2>
+                <p class="section-description">
+                    A narrative-driven 2D adventure where you jump between storybook pages. 
+                    Every page holds a new mystery, every chapter reveals a hidden truth.
+                </p>
+            </div>
+            
+            <!-- Downloads Grid -->
+            <div class="downloads-grid" style="grid-template-columns: minmax(300px, 500px); justify-content: center;">
+                <!-- Across the Pages Download Card -->
+                <div class="download-card">
+                    <span class="card-badge">Summer 2026</span>
+                    <div class="card-header">
+                        <div class="game-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="game-title">
+                            <h3>Across the Pages</h3>
+                            <p>Narrative Adventure · 2D Puzzle</p>
+                        </div>
+                    </div>
+                    
+                    <div class="game-info">
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-weight-hanging"></i> File size</span>
+                            <span class="info-value">TBD</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-code-branch"></i> Version</span>
+                            <span class="info-value">In Development</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-calendar"></i> Release</span>
+                            <span class="info-value">Summer 2026</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><i class="fas fa-globe"></i> Platforms</span>
+                            <span class="info-value">PC · Mac</span>
+                        </div>
+                    </div>
+                    
+                    <div class="game-tags">
+                        <span class="tag">Narrative</span>
+                        <span class="tag">Adventure</span>
+                        <span class="tag">Puzzle</span>
+                        <span class="tag">2D</span>
+                        <span class="tag">Story-rich</span>
+                        <span class="tag">Hand-drawn</span>
+                    </div>
+                    
+                    <!-- هذا هو الزر الصحيح - بدون تحميل -->
+                    <button class="download-btn-card" onclick="notifyMe(event)" style="width: 100%; border: none; cursor: pointer;">
+                        <div class="btn-info">
+                            <span class="size">Coming Soon</span>
+                            <span class="version">Get notified</span>
+                        </div>
+                        <div class="btn-action">
+                            <span>Notify me</span>
+                            <i class="fas fa-bell"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Quick Downloads -->
+            <div class="quick-downloads">
+                <h4 class="quick-title">Follow the journey</h4>
+                <div class="quick-grid" style="justify-content: center;">
+                    <a href="#" class="quick-item" onclick="newsletter(event); return false;" style="flex: 0 1 auto; min-width: 200px;">
+                        <div class="quick-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="quick-info">
+                            <div class="quick-name">Newsletter</div>
+                            <div class="quick-size">Monthly updates</div>
+                        </div>
+                        <div class="quick-action">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="quick-item" onclick="followTwitter(event); return false;" style="flex: 0 1 auto; min-width: 200px;">
+                        <div class="quick-icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="quick-info">
+                            <div class="quick-name">Twitter</div>
+                            <div class="quick-size">Daily updates</div>
+                        </div>
+                        <div class="quick-action">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="quick-item" onclick="joinDiscord(event); return false;" style="flex: 0 1 auto; min-width: 200px;">
+                        <div class="quick-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="quick-info">
+                            <div class="quick-name">Discord</div>
+                            <div class="quick-size">Join community</div>
+                        </div>
+                        <div class="quick-action">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studio Section -->
+    <section class="studio" id="studio">
+        <div class="studio-container">
+            <div class="studio-content">
+                <span class="section-subtitle">About us</span>
+                <h2 class="section-title">We are Bentley</h2>
+                <p class="studio-text">
+                    A small independent game studio focused on creating meaningful 2D experiences. 
+                    We believe in minimal design, thoughtful mechanics, and stories that resonate.
+                </p>
+                <div class="studio-stats">
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">months</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">0.1</span>
+                        <span class="stat-label">Games</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Downloads</span>
+                    </div>
+                </div>
+            </div>
+            <div class="studio-visual">
+                <div class="studio-grid">
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Let's create something</h2>
+            <p class="contact-text">
+                Have a project in mind? We'd love to hear about it.
+            </p>
+            <a href="mailto:hello@bentley.studio" class="contact-email">
+                <span>hello@bentley.studio</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">Bentley Studio</div>
+                <p class="footer-copyright">© 2026 — Across the Pages</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Twitter</a>
+                <a href="#" class="footer-link">Instagram</a>
+                <a href="#" class="footer-link">Discord</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    
+    <!-- Custom Functions -->
+    <script>
+        function notifyMe(event) {
+            if (event) event.preventDefault();
+            
+            const email = prompt("✨ Enter your email to be notified when Across the Pages launches:", "");
+            if (email) {
+                alert(`✅ Thanks! We'll notify you at ${email}`);
+                
+                // رسالة نجاح
+                const message = document.createElement('div');
+                message.className = 'download-message';
+                message.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    <span>You're on the list! 📚</span>
+                `;
+                document.body.appendChild(message);
+                
+                setTimeout(() => message.classList.add('show'), 100);
+                setTimeout(() => {
+                    message.classList.remove('show');
+                    setTimeout(() => message.remove(), 300);
+                }, 3000);
+            }
+            return false;
+        }
+        
+        function followTwitter(event) {
+            if (event) event.preventDefault();
+            window.open('https://twitter.com/bentleystudio', '_blank');
+            return false;
+        }
+        
+        function joinDiscord(event) {
+            if (event) event.preventDefault();
+            window.open('https://discord.gg/bentleystudio', '_blank');
+            return false;
+        }
+        
+        function newsletter(event) {
+            if (event) event.preventDefault();
+            notifyMe(event);
+            return false;
+        }
+    </script>
+</body>
+</html>
